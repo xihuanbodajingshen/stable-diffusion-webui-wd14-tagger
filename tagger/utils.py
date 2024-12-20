@@ -67,7 +67,7 @@ def refresh_interrogators() -> List[str]:
         exist_ok=True
     )
 
-     for path in os.scandir(getattr(shared.cmd_opts, 'deepdanbooru_projects_path', default_ddp_path)):
+    for path in os.scandir(getattr(shared.cmd_opts, 'deepdanbooru_projects_path', default_ddp_path)):
         if not path.is_dir():
             continue
 
